@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact and Registration Page</title>
+</head>
+
+<body>
+    <header>
+        <h1>Contact List and Registration Form</h1>
+    </header>
+
+    <!-- Ordered List with Roman Numerals -->
+    <section>
+        <h2>Topics</h2>
+        <ol type="I">
+            <li>HTML Basics</li>
+            <li>CSS Styling</li>
+            <li>JavaScript Introduction</li>
+            <li>Web Development</li>
+            <li>Project Deployment</li>
+        </ol>
+    </section>
+
+    <!-- External Image from Pexels -->
+    <section>
+        <h2>Featured Image</h2>
+        <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg" alt="A modern workplace setup with a laptop and accessories" width="600">
+    </section>
+
+    <!-- Contact Table -->
+    <section>
+        <h2>Contact List</h2>
+        <table border="1" cellpadding="10" cellspacing="0">
+            <thead>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Address</th>
+                    <th scope="col">Mobile</th>
+                    <th scope="col">Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mary Wanjiku</td>
+                    <td>Nairobi</td>
+                    <td>+25470156277</td>
+                    <td>mary@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Daisy Shii</td>
+                    <td>Narok</td>
+                    <td>+254789354</td>
+                    <td>Shiidai@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Emily Wangari</td>
+                    <td>Kahawa, Nairobi</td>
+                    <td>+254728976822</td>
+                    <td>emily25@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Dan Gichuhi</td>
+                    <td>Juja, Kiambu</td>
+                    <td>+254764532993</td>
+                    <td>michael.brown@example.com</td>
+                </tr>
+                <tr>
+                    <td>Baby Mumo</td>
+                    <td>Mombasa</td>
+                    <td>+2547567894</td>
+                    <td>Babymumo7@gmail.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Registration Form -->
+    <section>
+        <h2>Registration Form</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required aria-label="Full Name">
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required aria-label="Email Address">
+            <br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Create a password" required minlength="6" aria-label="Password">
+            <br><br>
+
+            <label for="confirm_password">Confirm Password:</label>
+            <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm your password" required minlength="6" aria-label="Confirm Password">
+            <br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required aria-label="Date of Birth">
+            <br><br>
+
+            <label for="gender">Gender:</label>
+            <br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <br><br>
+
+            <label for="course">Course:</label>
+            <select id="course" name="course" required aria-label="Course Selection">
+                <option value="">--Select a Course--</option>
+                <option value="webdev">Web Development</option>
+                <option value="datasci">Data Science</option>
+                <option value="uiux">UI/UX Design</option>
+            </select>
+            <br><br>
+
+            <label for="hobbies">Hobbies:</label>
+            <br>
+            <input type="checkbox" id="reading" name="hobbies" value="reading">
+            <label for="reading">Reading</label>
+            <br>
+            <input type="checkbox" id="traveling" name="hobbies" value="traveling">
+            <label for="traveling">Traveling</label>
+            <br>
+            <input type="checkbox" id="coding" name="hobbies" value="coding">
+            <label for="coding">Coding</label>
+            <br><br>
+
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I agree to the Terms and Conditions</label>
+            <br><br>
+
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Contact & Registration Page</p>
+    </footer>
+</body>
+
+</html>
